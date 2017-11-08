@@ -44,6 +44,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="koc-KY-Cuw"/>
                     </view>
+                    <connections>
+                        <outlet property="algorithm" destination="gIW-5I-zfC" id="zWT-eM-5sv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sh6-I0-yMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
