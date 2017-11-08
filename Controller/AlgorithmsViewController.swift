@@ -14,10 +14,10 @@ class AlgorithmsViewController: UIViewController {
     
     @IBOutlet weak var algorithm: UILabel!
     
-    private func setupAlgorithm() -> void
+    private func setupAlgorithm() -> Void
     {
         var algorithmSteps : [String] = []
-        
+        // MARK : - Algorithm definition
         let algorithm :String = "These are the instructions to create a project in Java using Eclipse and Github \n"
         let stepTwo :String = "Open Github"
         let stepThree :String = "Open Eclipse"
@@ -32,34 +32,43 @@ class AlgorithmsViewController: UIViewController {
         let stepTwelve :String = "Repeat step 11 but name it your projectname runner (TestRunner)"
         let stepThirteen :String = "Then open up your github account FILE new repository and Name it exactly what your project is called and click ok."
         
-        algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight, stepNine, stepTen, stepEleven, stepTwelve, stepThirteen]
+        // TODO: Finish adding all steps to algorithm
+        algorithmSteps = [stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight, stepNine, stepTen, stepEleven, stepTwelve, stepThirteen]
         
-        let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
-        let fullAttributedString = NSMutableAttributedString(String: algorithm, attributes: attributesDictioary)
+        let attributesDictionary = [NSAttributedStringKey.font : algorithm.font]
+        let fullAttributedString = NSMutableAttributedString(String: algorithm, attributes: attributesDictionary)
         
         for step in algorithmSteps
         {
             let bullet :String = ":P"
             let formattedStep :String = "\n\(bullet) \(step)"
-            let attributedStringSte : NSMutableString = NSMutableString(string: formattedStep)
+            let attributedStringStep : NSMutableString = NSMutableString(string: formattedStep)
             let paragraphStyle = createParagraphStyle()
             
-            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle]), range:
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle], range:
                 NSMakeRange(0,attributedStringStep.length))
             
             fullAttributedString.append(attributedStringStep)
         }
-        algorithmText.attributedText = fullAttributedString
+        algorithm.attributedText = fullAttributedString
         }
-         }
+        private func createParagraphStyle() -> NSMutableParagraphStyle
+        {
+            let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.alignment = .left
+            paragraphStyle.defaultTabInterval = 15
+            paragraphStyle.firstLineHeadIndent = 20
+            paragraphStyle.headIndent = 35
+        }
+}
         
         
-    override func viewDidLoad() {
+override public func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
