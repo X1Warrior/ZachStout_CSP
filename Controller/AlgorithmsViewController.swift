@@ -60,7 +60,7 @@ class AlgorithmsViewController: UIViewController {
             paragraphStyle.firstLineHeadIndent = 20
             paragraphStyle.headIndent = 35
         }
-}
+
         
         
 override public func viewDidLoad() {
@@ -83,5 +83,5 @@ override public func viewDidLoad() {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
+

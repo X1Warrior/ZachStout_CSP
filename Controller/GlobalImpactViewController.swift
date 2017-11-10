@@ -10,6 +10,15 @@ import UIKit
 
 class GlobalImpactViewController: UIViewController {
 
+    
+    @IBOutlet weak var NuclearPower: UIImageView!
+    
+    @IBOutlet weak var NuclearPowerApp: UIImageView!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
