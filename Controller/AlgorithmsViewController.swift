@@ -18,7 +18,7 @@ class AlgorithmsViewController: UIViewController {
     {
         var algorithmSteps : [String] = []
         // MARK : - Algorithm definition
-        let algorithm :String = "These are the instructions to create a project in Java using Eclipse and Github \n"
+        let stepOne :String = "These are the instructions to create a project in Java using Eclipse and Github \n"
         let stepTwo :String = "Open Github"
         let stepThree :String = "Open Eclipse"
         let stepFour :String = "Click launch if the allocated memory is correct if not browse and select correct file."
@@ -33,25 +33,26 @@ class AlgorithmsViewController: UIViewController {
         let stepThirteen :String = "Then open up your github account FILE new repository and Name it exactly what your project is called and click ok."
         
         // TODO: Finish adding all steps to algorithm
-        algorithmSteps = [stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight, stepNine, stepTen, stepEleven, stepTwelve, stepThirteen]
+        algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight, stepNine, stepTen, stepEleven, stepTwelve, stepThirteen]
         
         let attributesDictionary = [NSAttributedStringKey.font : algorithm.font]
-        let fullAttributedString = NSMutableAttributedString(String: algorithm, attributes: attributesDictionary)
+        let fullAttributedString = NSMutableAttributedString(string: stepOne, attributes: attributesDictionary)
         
         for step in algorithmSteps
         {
             let bullet :String = ":P"
             let formattedStep :String = "\n\(bullet) \(step)"
-            let attributedStringStep : NSMutableString = NSMutableString(string: formattedStep)
-            let paragraphStyle = createParagraphStyle()
+            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
+           
             
-            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle], range:
-                NSMakeRange(0,attributedStringStep.length))
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : createParagraphStyle()], range:
+                NSMakeRange(0, attributedStringStep.length))
             
             fullAttributedString.append(attributedStringStep)
-        }
+        
         algorithm.attributedText = fullAttributedString
         }
+    }
         private func createParagraphStyle() -> NSMutableParagraphStyle
         {
             let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
@@ -59,6 +60,8 @@ class AlgorithmsViewController: UIViewController {
             paragraphStyle.defaultTabInterval = 15
             paragraphStyle.firstLineHeadIndent = 20
             paragraphStyle.headIndent = 35
+            
+            return paragraphStyle
         }
 
         

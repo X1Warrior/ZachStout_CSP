@@ -60,36 +60,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nuclear power" translatesAutoresizingMaskIntoConstraints="NO" id="sFa-lB-7wt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sFa-lB-7wt">
                                 <rect key="frame" x="67" y="0.0" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nuclear power app" translatesAutoresizingMaskIntoConstraints="NO" id="9hQ-41-hft">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9hQ-41-hft">
                                 <rect key="frame" x="67" y="136" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH0-qy-9oX">
                                 <rect key="frame" x="428" y="272" width="3876" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">This App is going to start with a main screen that asks what are your thoughts on Nuclear Energy. It then has a text box for response and a submit button to help collect the user's response and send them to a list of buttons, each of which have a topic. When a specified button is click it displays an image and info on that category of Nuclear Energy. When they understand more the last button is  questions buton whcih brings them to a question screen. On this screen they can ask questions they ave on Nuclear Energy. If the machine can answer which stated dd</mutableString>
+                                <string key="text">This App is going to start with a main screen that asks what are your thoughts on Nuclear Energy. It then has a text box for response and a submit button to help collect the user's response and send them to a list of buttons, each of which have a topic. When a specified button is click it displays an image and info on that category of Nuclear Energy. When they understand more the last button is  questions buton whcih brings them to a question screen. On this screen they can ask questions they ave on Nuclear Energy. If the machine can answer which stated dd</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N3-uY-Em0">
-                                <rect key="frame" x="0.0" y="272" width="4288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N3-uY-Em0">
+                                <rect key="frame" x="-42" y="272" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">This App is going to start with a main screen that asks what are your thoughts on Nuclear Energy. It then has a text box for response and a submit button to help collect the user's response and send them to a list of buttons, each of which have a topic. When a specified button is click it displays an image and info on that category of Nuclear Energy. When they understand more the last button is  questions buton whcih brings them to a question screen. On this screen they can ask questions they ave on Nuclear Energy. If the machine can answer which stated dd</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKZ-rI-Cd6">
-                                <rect key="frame" x="0.0" y="301" width="2265" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4so-f1-NaR">
+                                <rect key="frame" x="144" y="272" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">This is a problem because of carelessness of the radioactive materials that are produced as well of if this comes into the wrong hands. Thats why more people need to understand more about the facilities especially in case of a disaster. If used correctly it is a near perfect emission of CO2 released.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKZ-rI-Cd6">
+                                <rect key="frame" x="144" y="301" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="label">
+                                        <attributes>
+                                            <color key="NSColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -97,8 +114,11 @@
                         <viewLayoutGuide key="safeArea" id="303-jr-nve"/>
                     </view>
                     <connections>
+                        <outlet property="AppDescriptionLabel" destination="4so-f1-NaR" id="kHt-ew-XSd"/>
+                        <outlet property="AppLabel" destination="4so-f1-NaR" id="z3C-no-XT1"/>
                         <outlet property="NuclearPower" destination="sFa-lB-7wt" id="dNF-Cd-nay"/>
                         <outlet property="NuclearPowerApp" destination="9hQ-41-hft" id="C5D-tB-4e8"/>
+                        <outlet property="ProblemLabel" destination="dKZ-rI-Cd6" id="o3F-K4-NFE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G78-pb-zAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,8 +159,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Nuclear power" width="275" height="183"/>
-        <image name="Nuclear power app" width="582" height="440"/>
         <image name="javaSample" width="2252" height="1508"/>
     </resources>
 </document>
