@@ -21,6 +21,8 @@
 		484B04B01FA25B90005C415D /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04AF1FA25B90005C415D /* ProgrammingViewController.swift */; };
 		484B04B21FA25BA4005C415D /* TheInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04B11FA25BA4005C415D /* TheInternetViewController.swift */; };
 		484B04B41FA25BBF005C415D /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */; };
+		486864F91FC35F2400CB71B4 /* Playto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486864F81FC35F2400CB71B4 /* Playto.swift */; };
+		486864FB1FC35F4900CB71B4 /* bigSquishy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486864FA1FC35F4900CB71B4 /* bigSquishy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		484B04AF1FA25B90005C415D /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
 		484B04B11FA25BA4005C415D /* TheInternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheInternetViewController.swift; sourceTree = "<group>"; };
 		484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
+		486864F81FC35F2400CB71B4 /* Playto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playto.swift; sourceTree = "<group>"; };
+		486864FA1FC35F4900CB71B4 /* bigSquishy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigSquishy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,8 @@
 			children = (
 				484B04801FA256DB005C415D /* Info.plist */,
 				484B047B1FA256DB005C415D /* Assets.xcassets */,
+				486864F81FC35F2400CB71B4 /* Playto.swift */,
+				486864FA1FC35F4900CB71B4 /* bigSquishy.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,9 +304,11 @@
 			files = (
 				484B04B41FA25BBF005C415D /* GlobalImpactViewController.swift in Sources */,
 				484B04AC1FA25B5B005C415D /* DataViewController.swift in Sources */,
+				486864FB1FC35F4900CB71B4 /* bigSquishy.swift in Sources */,
 				484B04B01FA25B90005C415D /* ProgrammingViewController.swift in Sources */,
 				484B04AE1FA25B7C005C415D /* AlgorithmsViewController.swift in Sources */,
 				484B04AA1FA25B3D005C415D /* AbstractionController.swift in Sources */,
+				486864F91FC35F2400CB71B4 /* Playto.swift in Sources */,
 				484B04B21FA25BA4005C415D /* TheInternetViewController.swift in Sources */,
 				484B04A81FA25AFB005C415D /* CreativityViewController.swift in Sources */,
 				484B04771FA256DB005C415D /* ViewController.swift in Sources */,
