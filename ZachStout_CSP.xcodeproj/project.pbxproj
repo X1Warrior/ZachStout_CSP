@@ -15,7 +15,7 @@
 		484B048A1FA256DB005C415D /* ZachStout_CSPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04891FA256DB005C415D /* ZachStout_CSPTests.swift */; };
 		484B04951FA256DB005C415D /* ZachStout_CSPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04941FA256DB005C415D /* ZachStout_CSPUITests.swift */; };
 		484B04A81FA25AFB005C415D /* CreativityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04A71FA25AFB005C415D /* CreativityViewController.swift */; };
-		484B04AA1FA25B3D005C415D /* AbstractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04A91FA25B3D005C415D /* AbstractionController.swift */; };
+		484B04AA1FA25B3D005C415D /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04A91FA25B3D005C415D /* AbstractionViewController.swift */; };
 		484B04AC1FA25B5B005C415D /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04AB1FA25B5B005C415D /* DataViewController.swift */; };
 		484B04AE1FA25B7C005C415D /* AlgorithmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04AD1FA25B7C005C415D /* AlgorithmsViewController.swift */; };
 		484B04B01FA25B90005C415D /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04AF1FA25B90005C415D /* ProgrammingViewController.swift */; };
@@ -23,6 +23,7 @@
 		484B04B41FA25BBF005C415D /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */; };
 		486864F91FC35F2400CB71B4 /* Playto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486864F81FC35F2400CB71B4 /* Playto.swift */; };
 		486864FB1FC35F4900CB71B4 /* bigSquishy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486864FA1FC35F4900CB71B4 /* bigSquishy.swift */; };
+		48B12CE61FCCA608002B159A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B12CE51FCCA607002B159A /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,7 @@
 		484B04941FA256DB005C415D /* ZachStout_CSPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZachStout_CSPUITests.swift; sourceTree = "<group>"; };
 		484B04961FA256DB005C415D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484B04A71FA25AFB005C415D /* CreativityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityViewController.swift; sourceTree = "<group>"; };
-		484B04A91FA25B3D005C415D /* AbstractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionController.swift; sourceTree = "<group>"; };
+		484B04A91FA25B3D005C415D /* AbstractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionViewController.swift; sourceTree = "<group>"; };
 		484B04AB1FA25B5B005C415D /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		484B04AD1FA25B7C005C415D /* AlgorithmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsViewController.swift; sourceTree = "<group>"; };
 		484B04AF1FA25B90005C415D /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		486864F81FC35F2400CB71B4 /* Playto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playto.swift; sourceTree = "<group>"; };
 		486864FA1FC35F4900CB71B4 /* bigSquishy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigSquishy.swift; sourceTree = "<group>"; };
+		48B12CE51FCCA607002B159A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		484B04681FA256DA005C415D = {
 			isa = PBXGroup;
 			children = (
+				48B12CE51FCCA607002B159A /* Default-568h@2x.png */,
 				484B04A41FA25742005C415D /* Model */,
 				484B04A31FA25727005C415D /* view */,
 				484B04A21FA2570E005C415D /* Controller */,
@@ -138,7 +141,7 @@
 				484B04761FA256DB005C415D /* ViewController.swift */,
 				484B04741FA256DB005C415D /* AppDelegate.swift */,
 				484B04A71FA25AFB005C415D /* CreativityViewController.swift */,
-				484B04A91FA25B3D005C415D /* AbstractionController.swift */,
+				484B04A91FA25B3D005C415D /* AbstractionViewController.swift */,
 				484B04AB1FA25B5B005C415D /* DataViewController.swift */,
 				484B04AD1FA25B7C005C415D /* AlgorithmsViewController.swift */,
 				484B04AF1FA25B90005C415D /* ProgrammingViewController.swift */,
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				484B047F1FA256DB005C415D /* LaunchScreen.storyboard in Resources */,
+				48B12CE61FCCA608002B159A /* Default-568h@2x.png in Resources */,
 				484B047C1FA256DB005C415D /* Assets.xcassets in Resources */,
 				484B047A1FA256DB005C415D /* Main.storyboard in Resources */,
 			);
@@ -307,7 +311,7 @@
 				486864FB1FC35F4900CB71B4 /* bigSquishy.swift in Sources */,
 				484B04B01FA25B90005C415D /* ProgrammingViewController.swift in Sources */,
 				484B04AE1FA25B7C005C415D /* AlgorithmsViewController.swift in Sources */,
-				484B04AA1FA25B3D005C415D /* AbstractionController.swift in Sources */,
+				484B04AA1FA25B3D005C415D /* AbstractionViewController.swift in Sources */,
 				486864F91FC35F2400CB71B4 /* Playto.swift in Sources */,
 				484B04B21FA25BA4005C415D /* TheInternetViewController.swift in Sources */,
 				484B04A81FA25AFB005C415D /* CreativityViewController.swift in Sources */,
@@ -479,7 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ZachStout_CSP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Model/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ctec.ZachStout-CSP";
@@ -494,7 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ZachStout_CSP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Model/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ctec.ZachStout-CSP";
