@@ -19,10 +19,12 @@
 		484B04AC1FA25B5B005C415D /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04AB1FA25B5B005C415D /* DataViewController.swift */; };
 		484B04AE1FA25B7C005C415D /* AlgorithmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04AD1FA25B7C005C415D /* AlgorithmsViewController.swift */; };
 		484B04B01FA25B90005C415D /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04AF1FA25B90005C415D /* ProgrammingViewController.swift */; };
-		484B04B21FA25BA4005C415D /* TheInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04B11FA25BA4005C415D /* TheInternetViewController.swift */; };
+		484B04B21FA25BA4005C415D /* TheInternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04B11FA25BA4005C415D /* TheInternetMasterViewController.swift */; };
 		484B04B41FA25BBF005C415D /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */; };
 		486864F91FC35F2400CB71B4 /* Playto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486864F81FC35F2400CB71B4 /* Playto.swift */; };
 		486864FB1FC35F4900CB71B4 /* bigSquishy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486864FA1FC35F4900CB71B4 /* bigSquishy.swift */; };
+		48ACC92F1FCF39C9005FD6A2 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ACC92E1FCF39C9005FD6A2 /* InternetDetailViewController.swift */; };
+		48ACC9321FCF3B9A005FD6A2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ACC9311FCF3B9A005FD6A2 /* WebKit.framework */; };
 		48B12CE61FCCA608002B159A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B12CE51FCCA607002B159A /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -62,10 +64,12 @@
 		484B04AB1FA25B5B005C415D /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		484B04AD1FA25B7C005C415D /* AlgorithmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsViewController.swift; sourceTree = "<group>"; };
 		484B04AF1FA25B90005C415D /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
-		484B04B11FA25BA4005C415D /* TheInternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheInternetViewController.swift; sourceTree = "<group>"; };
+		484B04B11FA25BA4005C415D /* TheInternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheInternetMasterViewController.swift; sourceTree = "<group>"; };
 		484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		486864F81FC35F2400CB71B4 /* Playto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playto.swift; sourceTree = "<group>"; };
 		486864FA1FC35F4900CB71B4 /* bigSquishy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigSquishy.swift; sourceTree = "<group>"; };
+		48ACC92E1FCF39C9005FD6A2 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		48ACC9311FCF3B9A005FD6A2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		48B12CE51FCCA607002B159A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48ACC9321FCF3B9A005FD6A2 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +109,7 @@
 				484B04881FA256DB005C415D /* ZachStout_CSPTests */,
 				484B04931FA256DB005C415D /* ZachStout_CSPUITests */,
 				484B04721FA256DB005C415D /* Products */,
+				48ACC9301FCF3B9A005FD6A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,8 +151,9 @@
 				484B04AB1FA25B5B005C415D /* DataViewController.swift */,
 				484B04AD1FA25B7C005C415D /* AlgorithmsViewController.swift */,
 				484B04AF1FA25B90005C415D /* ProgrammingViewController.swift */,
-				484B04B11FA25BA4005C415D /* TheInternetViewController.swift */,
+				484B04B11FA25BA4005C415D /* TheInternetMasterViewController.swift */,
 				484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */,
+				48ACC92E1FCF39C9005FD6A2 /* InternetDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +176,14 @@
 				486864FA1FC35F4900CB71B4 /* bigSquishy.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		48ACC9301FCF3B9A005FD6A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48ACC9311FCF3B9A005FD6A2 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,10 +325,11 @@
 				484B04AC1FA25B5B005C415D /* DataViewController.swift in Sources */,
 				486864FB1FC35F4900CB71B4 /* bigSquishy.swift in Sources */,
 				484B04B01FA25B90005C415D /* ProgrammingViewController.swift in Sources */,
+				48ACC92F1FCF39C9005FD6A2 /* InternetDetailViewController.swift in Sources */,
 				484B04AE1FA25B7C005C415D /* AlgorithmsViewController.swift in Sources */,
 				484B04AA1FA25B3D005C415D /* AbstractionViewController.swift in Sources */,
 				486864F91FC35F2400CB71B4 /* Playto.swift in Sources */,
-				484B04B21FA25BA4005C415D /* TheInternetViewController.swift in Sources */,
+				484B04B21FA25BA4005C415D /* TheInternetMasterViewController.swift in Sources */,
 				484B04A81FA25AFB005C415D /* CreativityViewController.swift in Sources */,
 				484B04771FA256DB005C415D /* ViewController.swift in Sources */,
 				484B04751FA256DB005C415D /* AppDelegate.swift in Sources */,
