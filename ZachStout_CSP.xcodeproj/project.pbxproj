@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48020CD71FD72B4B001FDD21 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48020CD61FD72B4B001FDD21 /* DrawingView.swift */; };
 		484B04751FA256DB005C415D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04741FA256DB005C415D /* AppDelegate.swift */; };
 		484B04771FA256DB005C415D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04761FA256DB005C415D /* ViewController.swift */; };
 		484B047A1FA256DB005C415D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484B04781FA256DB005C415D /* Main.storyboard */; };
 		484B047C1FA256DB005C415D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484B047B1FA256DB005C415D /* Assets.xcassets */; };
-		484B047F1FA256DB005C415D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484B047D1FA256DB005C415D /* LaunchScreen.storyboard */; };
 		484B048A1FA256DB005C415D /* ZachStout_CSPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04891FA256DB005C415D /* ZachStout_CSPTests.swift */; };
 		484B04951FA256DB005C415D /* ZachStout_CSPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04941FA256DB005C415D /* ZachStout_CSPUITests.swift */; };
 		484B04A81FA25AFB005C415D /* CreativityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04A71FA25AFB005C415D /* CreativityViewController.swift */; };
@@ -46,12 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48020CD61FD72B4B001FDD21 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		484B04711FA256DB005C415D /* ZachStout_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZachStout_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484B04741FA256DB005C415D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484B04761FA256DB005C415D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		484B04791FA256DB005C415D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		484B047B1FA256DB005C415D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		484B047E1FA256DB005C415D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484B04801FA256DB005C415D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484B04851FA256DB005C415D /* ZachStout_CSPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZachStout_CSPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484B04891FA256DB005C415D /* ZachStout_CSPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZachStout_CSPTests.swift; sourceTree = "<group>"; };
@@ -161,8 +161,8 @@
 		484B04A31FA25727005C415D /* view */ = {
 			isa = PBXGroup;
 			children = (
-				484B047D1FA256DB005C415D /* LaunchScreen.storyboard */,
 				484B04781FA256DB005C415D /* Main.storyboard */,
+				48020CD61FD72B4B001FDD21 /* DrawingView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -293,7 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484B047F1FA256DB005C415D /* LaunchScreen.storyboard in Resources */,
 				48B12CE61FCCA608002B159A /* Default-568h@2x.png in Resources */,
 				484B047C1FA256DB005C415D /* Assets.xcassets in Resources */,
 				484B047A1FA256DB005C415D /* Main.storyboard in Resources */,
@@ -326,6 +325,7 @@
 				486864FB1FC35F4900CB71B4 /* bigSquishy.swift in Sources */,
 				484B04B01FA25B90005C415D /* ProgrammingViewController.swift in Sources */,
 				48ACC92F1FCF39C9005FD6A2 /* InternetDetailViewController.swift in Sources */,
+				48020CD71FD72B4B001FDD21 /* DrawingView.swift in Sources */,
 				484B04AE1FA25B7C005C415D /* AlgorithmsViewController.swift in Sources */,
 				484B04AA1FA25B3D005C415D /* AbstractionViewController.swift in Sources */,
 				486864F91FC35F2400CB71B4 /* Playto.swift in Sources */,
@@ -374,14 +374,6 @@
 				484B04791FA256DB005C415D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		484B047D1FA256DB005C415D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				484B047E1FA256DB005C415D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

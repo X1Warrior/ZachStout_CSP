@@ -87,9 +87,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJd-ab-JnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="168.80000000000001" y="-413.3433283358321"/>
+            <point key="canvasLocation" x="567" y="-317"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Internet Samples-->
         <scene sceneID="wro-Hx-MRo">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="LWM-B8-DsB" customClass="TheInternetMasterViewController" customModule="ZachStout_CSP" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,6 +105,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="iYM-XD-UZa" kind="showDetail" identifier="showDetail" id="ZE9-bb-50o"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -112,7 +115,7 @@
                             <outlet property="delegate" destination="LWM-B8-DsB" id="3R6-T9-3aF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="aYE-DI-WN7"/>
+                    <navigationItem key="navigationItem" title="Internet Samples" id="aYE-DI-WN7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYE-3I-v9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -486,4 +489,7 @@
         <image name="Object Code" width="364" height="139"/>
         <image name="javaSample" width="2252" height="1508"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZE9-bb-50o"/>
+    </inferredMetricsTieBreakers>
 </document>
