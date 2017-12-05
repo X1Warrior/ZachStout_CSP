@@ -22,22 +22,33 @@ public class TheInternetMasterViewController: UITableViewController
         ]
     }()
     
+    private lazy var addresses : [String] = []
+    
     private var detailViewController : InternetDetailViewController?
     
     private func setup() -> Void
     {
       
         addresses = [
-        https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles
-        https://ctec.canyonsdistrict.org/
-        http://www.canyonsdistrict.org/
-        https://twitter.com/?lang=en
-        https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html
+        "https://google.com",
+        "https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles",
+        "https://ctec.canyonsdistrict.org/",
+        "http://www.canyonsdistrict.org/",
+        "https://twitter.com/?lang=en",
+        "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html"
             
         ]
         
-        
+        if let splitView = splitViewController
+        {
+            let currentControllers = splitView.viewControllers
+            detailViewController = currentControllers[0] as?
+            InternetDetailViewController
+        }
+    
     }
+
+    
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +63,7 @@ public class TheInternetMasterViewController: UITableViewController
     override public func numberOfSections(in tableView: UITableView) -> Int
     {
         // #warning Incomplete implementation, return the number of sections
-        return internetTopics.count
+        return 1
     }
     
     override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -60,7 +71,7 @@ public class TheInternetMasterViewController: UITableViewController
         return internetTopics.count
     }
     
-    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewController
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         let currentText = internetTopics[indexPath.row]
@@ -116,5 +127,6 @@ public class TheInternetMasterViewController: UITableViewController
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

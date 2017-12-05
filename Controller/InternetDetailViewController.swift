@@ -30,7 +30,7 @@ class InternetDetailViewController: UIViewController
         
         didSet
         {
-            configuredDetailText()
+            configureDetailView()
         }
     }
     
@@ -42,14 +42,16 @@ class InternetDetailViewController: UIViewController
             if let currentWebView = webViewer
             {
                 let currentURL = URL(string: detailAddress!)
+                let currentWebRequest = URLRequest(url: currentURL!)
+                currentWebView.load(currentWebRequest)
             }
         }
         else
         {
-            if let current currentWebView = webViewer
+            if let currentWebView = webViewer
             {
                 let currentURL = URL(string: "https://www.cnn.com")
-                currentWebView.load(URLRequest(urlcurrentURL!))
+                currentWebView.load(URLRequest(url:currentURL!))
             }
         }
         if detailText != nil

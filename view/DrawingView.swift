@@ -16,8 +16,8 @@ class DrawingView: UIView {
     override func draw(_ rect: CGRect) {
         // Drawing code
         drawStickFigure().stroke()
-//        drawTurtle()
-//        drawHappyTree()
+        drawTurtle()
+        drawHappyTree()
     }
     
     private func drawStickFigure() -> UIBezierPath
@@ -44,6 +44,43 @@ class DrawingView: UIView {
         return stickFigure
     }
     
+    public func drawTurtle() -> Void
+    {
+        let logo = UIBezierPath()
+        UIColor.white.setFill()
+        logo.move(to: CGPoint(x: 50, y: 100))
+        logo.move(to: CGPoint(x: 100, y: 300))
+        logo.move(to: CGPoint(x: 50, y: 350))
+        logo.close()
+        logo.fill()
+    }
     public func drawHappyTree() -> Void
-
+    {
+        let Dog = UIBezierPath()
+        
+        Dog.move(to: CGPoint(x:80, y:50))
+        Dog.addLine(to: CGPoint(x:120, y:150))
+        Dog.addLine(to: CGPoint(x:40, y:150))
+        Dog.close()
+        UIColor(patternImage: UIImage(named: "Dog")!).setFill()
+        UIColor.brown.setStroke()
+        Dog.lineWidth = 2.0
+        Dog.fill()
+        Dog.stroke()
+        
+        let happyTree = UIBezierPath()
+        
+        UIColor.green.setFill()
+        happyTree.move(to: CGPoint(x: 110, y: 150))
+        happyTree.addLine(to: CGPoint(x: 150, y: 200))
+        happyTree.addLine(to: CGPoint(x: 10, y: 200))
+        happyTree.addLine(to: CGPoint(x: 50, y: 150))
+        happyTree.close()
+        happyTree.stroke()
+        happyTree.fill()
+        happyTree.move(to: CGPoint(x: 80, y: 200))
+        happyTree.addLine(to: CGPoint(x: 80, y: 250))
+        happyTree.lineWidth = 6.0
+        happyTree.stroke()
+    }
 }
