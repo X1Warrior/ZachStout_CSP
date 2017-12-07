@@ -23,7 +23,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
             UIImage(named: "Block code"),
             UIImage(named: "javaSample"),
             UIImage(named: "Nuclear power"),
-            UIImage(named: "Object code"),
+            UIImage(named: "Object Code"),
             UIImage(named: "And Gate")
         ]
     }()
@@ -83,7 +83,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
                                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     
     {
-        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: IndexPath) as! ArtCell
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
         
         artCell.backgroundColor = .purple
         artCell.imageView.image = artSelection[indexPath.row]

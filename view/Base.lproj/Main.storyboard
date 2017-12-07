@@ -4,8 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -137,6 +137,63 @@
             </objects>
             <point key="canvasLocation" x="169" y="-1119"/>
         </scene>
+        <!--Creativity View Controller-->
+        <scene sceneID="8Pu-m3-yyd">
+            <objects>
+                <collectionViewController id="ejG-Ge-7VX" customClass="CreativityViewController" customModule="ZachStout_CSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="waC-cz-fUz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MKb-k7-mCU">
+                            <size key="itemSize" width="250" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artIdentifier" id="3Ya-Zl-5Wz" customClass="ArtCell" customModule="ZachStout_CSP" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="0.0" width="250" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5FZ-1z-0xk">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiW-eC-fBq">
+                                            <rect key="frame" x="0.0" y="279" width="250" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="oiW-eC-fBq" firstAttribute="top" secondItem="5FZ-1z-0xk" secondAttribute="bottom" id="OlN-ga-Bul"/>
+                                    <constraint firstItem="oiW-eC-fBq" firstAttribute="top" secondItem="5FZ-1z-0xk" secondAttribute="bottom" id="XQ7-tP-fXS"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="oiW-eC-fBq" secondAttribute="trailing" id="b8S-fF-2zC"/>
+                                    <constraint firstItem="oiW-eC-fBq" firstAttribute="leading" secondItem="3Ya-Zl-5Wz" secondAttribute="leadingMargin" id="vVH-1d-Nmf"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="oiW-eC-fBq" secondAttribute="bottom" id="xHg-eN-TPy"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageName" destination="oiW-eC-fBq" id="MdL-D0-LlC"/>
+                                    <outlet property="imageView" destination="5FZ-1z-0xk" id="Y9O-vc-1pW"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ejG-Ge-7VX" id="gAH-pw-DrT"/>
+                            <outlet property="delegate" destination="ejG-Ge-7VX" id="aCI-CJ-UgE"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="0Jq-5N-UPL"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XY9-4L-fms" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1202" y="-1594"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="70f-9Z-qfz">
             <objects>
@@ -148,7 +205,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O53-mz-XPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-714" y="-806"/>
+            <point key="canvasLocation" x="-655" y="-845"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lO2-7q-C47">
@@ -322,11 +379,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0F-px-7qQ">
-                                <rect key="frame" x="175" y="493" width="98" height="30"/>
+                                <rect key="frame" x="175" y="493" width="98" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="i6e-OC-uvF" kind="show" id="cMI-tH-DvP"/>
+                                    <segue destination="r9X-q0-0Nl" kind="show" id="y8S-Lh-9XR"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEQ-Aj-9KD">
@@ -485,6 +542,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5f-xg-JxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1271.2" y="829.83508245877067"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K3s-rl-eSA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r9X-q0-0Nl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4VB-lf-Pjq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ejG-Ge-7VX" kind="relationship" relationship="rootViewController" id="YTj-ga-CD7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRq-Wu-18B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1927" y="-1593"/>
         </scene>
     </scenes>
     <resources>
