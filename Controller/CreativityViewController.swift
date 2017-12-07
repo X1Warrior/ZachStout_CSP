@@ -8,7 +8,26 @@
 
 import UIKit
 
-class CreativityViewController: UIViewController {
+class CreativityViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout
+{
+    private let reuseIdentifier = "artIdentifier"
+    private let sectionInsets = UIdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    private let itemsPerRow : CGFloat = 3
+    
+    private lazy var artSeletion : [UIImage?] =
+    {
+        return [
+            UIImage(named: "cute"),
+            UIImage(named: "Dog"),
+            UIImage(named: "Binary Code"),
+            UIImage(named: "Block code"),
+            UIImage(named: "javaSample"),
+            UIImage(named: "Nuclear power"),
+            UIImage(named: "Object code"),
+            UIImage(named: "And Gate")
+        ]
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
