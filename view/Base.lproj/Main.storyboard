@@ -386,7 +386,7 @@
                                     <segue destination="r9X-q0-0Nl" kind="show" id="y8S-Lh-9XR"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEQ-Aj-9KD">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEQ-Aj-9KD" customClass="DrawingView" customModule="ZachStout_CSP" customModuleProvider="target">
                                 <rect key="frame" x="16" y="20" width="359" height="465"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.74368572649999998" green="0.20228744579999999" blue="0.94670903500000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

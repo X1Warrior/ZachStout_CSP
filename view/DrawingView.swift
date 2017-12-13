@@ -24,7 +24,7 @@ class DrawingView: UIView {
     {
         let stickFigure = UIBezierPath()
         
-        UIColor.magenta.setStroke()
+        UIColor.blue.setStroke()
         stickFigure.lineWidth = 3.0
         
         stickFigure.addArc(withCenter: CGPoint(x: 200, y: 200),

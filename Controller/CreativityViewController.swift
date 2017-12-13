@@ -117,7 +117,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
     
     public func collectionView(_ collectionView: UICollectionView,
                                layout collectionViewLayout: UICollectionViewLayout,
-                               insetForSection: Int) -> UIEdgeInsets
+                               insetForSectionAt insetForSection: Int) -> UIEdgeInsets
     {
         return sectionInsets
     }
