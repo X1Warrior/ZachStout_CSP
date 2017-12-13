@@ -58,7 +58,9 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
 
     private func setupPlayer() -> Void
     {
-    
+    //frame obunds
+        player.position = CGPoint(x:self.frame.midX, y:player.sizeheight/2 + 10)
+        addChild(player)
     }
     
     private func moveInvaders() -> Void
