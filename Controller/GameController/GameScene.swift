@@ -14,7 +14,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
 {
     //MARK: Invader Data
     let rowsOfInvaders : Int = 4
-    var invaderSpeed : Int = 2
+    var invaderSpeed : Int = 17
     var invadersThatCanFire : [Invader] = []
     
     //MARK: Player Data
@@ -125,7 +125,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody
         
-        backgroundColor = UIColor.magenta
+        backgroundColor = UIColor.darkGray
         rightBounds = self.size.width - 30
         setupInvaders()
         setupPlayer()
@@ -170,6 +170,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         
         var firstBody: SKPhysicsBody
         var secondBody: SKPhysicsBody
+        
         if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask
         {
             firstBody = contact.bodyA
