@@ -571,7 +571,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/Model/Info.plist";
+				DEVELOPMENT_TEAM = X77K8LBKTS;
+				INFOPLIST_FILE = "$(SRCROOT)/resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ctec.ZachStout-CSP";
@@ -586,7 +587,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/Model/Info.plist";
+				DEVELOPMENT_TEAM = X77K8LBKTS;
+				INFOPLIST_FILE = "$(SRCROOT)/resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ctec.ZachStout-CSP";

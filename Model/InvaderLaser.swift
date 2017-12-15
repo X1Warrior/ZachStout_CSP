@@ -15,7 +15,7 @@ public class InvaderLaser: Projectile
     {
         super.init(imageName: imageName, bulletSound: bulletSound)
         
-        self.physicsBody = SKPhysicsBody(testure: self.texture!, size: self.size)
+        self.physicsBody = SKPhysicsBody(texture: self.texture!, size: self.size)
         self.physicsBody?.isDynamic = true
         self.physicsBody?.usesPreciseCollisionDetection = true
         self.physicsBody?.categoryBitMask = CollisionCategories.InvaderBullet
