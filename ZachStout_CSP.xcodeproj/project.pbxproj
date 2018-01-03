@@ -22,7 +22,7 @@
 		484B04B21FA25BA4005C415D /* TheInternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04B11FA25BA4005C415D /* TheInternetMasterViewController.swift */; };
 		484B04B41FA25BBF005C415D /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */; };
 		4862F2E71FD9D42400237025 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862F2E61FD9D42400237025 /* ArtCell.swift */; };
-		486801AE1FFD6EFB00C14200 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486801AD1FFD6EFB00C14200 /* File.swift */; };
+		486801AE1FFD6EFB00C14200 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486801AD1FFD6EFB00C14200 /* DeathScene.swift */; };
 		48ACC92F1FCF39C9005FD6A2 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ACC92E1FCF39C9005FD6A2 /* InternetDetailViewController.swift */; };
 		48ACC9321FCF3B9A005FD6A2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ACC9311FCF3B9A005FD6A2 /* WebKit.framework */; };
 		48B12CE61FCCA608002B159A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B12CE51FCCA607002B159A /* Default-568h@2x.png */; };
@@ -82,7 +82,7 @@
 		484B04B11FA25BA4005C415D /* TheInternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheInternetMasterViewController.swift; sourceTree = "<group>"; };
 		484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		4862F2E61FD9D42400237025 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
-		486801AD1FFD6EFB00C14200 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		486801AD1FFD6EFB00C14200 /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 		48ACC92E1FCF39C9005FD6A2 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		48ACC9311FCF3B9A005FD6A2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		48B12CE51FCCA607002B159A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 				48C38D9A1FE1AB2B0009A1B2 /* StartScene.swift */,
 				48C38D971FE1AB240009A1B2 /* GameScene.swift */,
 				48C38D961FE1AB240009A1B2 /* LevelCompleteScene.swift */,
-				486801AD1FFD6EFB00C14200 /* File.swift */,
+				486801AD1FFD6EFB00C14200 /* DeathScene.swift */,
 			);
 			path = GameController;
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 				48C38DB41FE1AF060009A1B2 /* PlayerLaser.swift in Sources */,
 				48C38DAA1FE1AE940009A1B2 /* Utilities.swift in Sources */,
 				48C38DB21FE1AF060009A1B2 /* Player.swift in Sources */,
-				486801AE1FFD6EFB00C14200 /* File.swift in Sources */,
+				486801AE1FFD6EFB00C14200 /* DeathScene.swift in Sources */,
 				484B04B01FA25B90005C415D /* ProgrammingViewController.swift in Sources */,
 				48C38DB11FE1AF060009A1B2 /* Projectile.swift in Sources */,
 				48ACC92F1FCF39C9005FD6A2 /* InternetDetailViewController.swift in Sources */,
