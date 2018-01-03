@@ -225,7 +225,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         {
             player.kill()
         }
-             if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.Invader != 0))
+             if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
              {
                 if (contact.bodyA.node?.parent == nil || contact.bodyB.node?.parent == nil)
                 {
