@@ -24,7 +24,9 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
             UIImage(named: "javaSample"),
             UIImage(named: "Nuclear power"),
             UIImage(named: "Object Code"),
-            UIImage(named: "And Gate")
+            UIImage(named: "And Gate"),
+            UIImage(named: "Haiku"),
+            UIImage(named: "myArt")
         ]
     }()
     

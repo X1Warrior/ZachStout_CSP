@@ -14,7 +14,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
 {
     //MARK: Invader Data
     let rowsOfInvaders : Int = 4
-    var invaderSpeed : Int = 30
+    var invaderSpeed : Int = 5
     var invadersThatCanFire : [Invader] = []
     
     //MARK: Player Data
@@ -73,7 +73,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             let invader = node as! SKSpriteNode
             let invaderHalfWidth = invader.size.width / 2
             invader.position.x -= CGFloat(self.invaderSpeed)
-            if(invader.position.x > self.rightBounds + invaderHalfWidth || invader.position.x < self.leftBounds - invaderHalfWidth)
+            if(invader.position.x < self.rightBounds + invaderHalfWidth || invader.position.x > self.leftBounds - invaderHalfWidth)
             {
                 changeDirection = true
             }

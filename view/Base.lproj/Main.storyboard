@@ -403,7 +403,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="exo-8U-8Ej" kind="show" id="Q9N-Z2-tXR"/>
+                                    <segue destination="exo-8U-8Ej" kind="show" id="7Ft-oB-nfX"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEQ-Aj-9KD" customClass="DrawingView" customModule="ZachStout_CSP" customModuleProvider="target">
@@ -573,9 +573,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ejG-Ge-7VX" kind="relationship" relationship="rootViewController" id="YTj-ga-CD7"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRq-Wu-18B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -592,6 +589,6 @@
         <image name="javaSample" width="2252" height="1508"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZE9-bb-50o"/>
+        <segue reference="trb-ZP-WOS"/>
     </inferredMetricsTieBreakers>
 </document>
