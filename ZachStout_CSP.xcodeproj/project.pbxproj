@@ -23,6 +23,8 @@
 		484B04B41FA25BBF005C415D /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */; };
 		4862F2E71FD9D42400237025 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862F2E61FD9D42400237025 /* ArtCell.swift */; };
 		486801AE1FFD6EFB00C14200 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486801AD1FFD6EFB00C14200 /* DeathScene.swift */; };
+		487CE1A32005431C0088F1CF /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CE1A22005431C0088F1CF /* BucketItemCell.swift */; };
+		487CE1A6200543840088F1CF /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CE1A5200543840088F1CF /* BucketItem.swift */; };
 		48ACC92F1FCF39C9005FD6A2 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ACC92E1FCF39C9005FD6A2 /* InternetDetailViewController.swift */; };
 		48ACC9321FCF3B9A005FD6A2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ACC9311FCF3B9A005FD6A2 /* WebKit.framework */; };
 		48B12CE61FCCA608002B159A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B12CE51FCCA607002B159A /* Default-568h@2x.png */; };
@@ -83,6 +85,9 @@
 		484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		4862F2E61FD9D42400237025 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		486801AD1FFD6EFB00C14200 /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
+		487CE1A22005431C0088F1CF /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		487CE1A5200543840088F1CF /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		487CE1A7200543E80088F1CF /* bucket.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = bucket.csv; path = ../../../../Downloads/bucket.csv; sourceTree = "<group>"; };
 		48ACC92E1FCF39C9005FD6A2 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		48ACC9311FCF3B9A005FD6A2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		48B12CE51FCCA607002B159A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -180,13 +185,13 @@
 				484B04741FA256DB005C415D /* AppDelegate.swift */,
 				484B04A71FA25AFB005C415D /* CreativityViewController.swift */,
 				484B04A91FA25B3D005C415D /* AbstractionViewController.swift */,
-				484B04AB1FA25B5B005C415D /* DataViewController.swift */,
 				484B04AD1FA25B7C005C415D /* AlgorithmsViewController.swift */,
 				484B04AF1FA25B90005C415D /* ProgrammingViewController.swift */,
 				484B04B11FA25BA4005C415D /* TheInternetMasterViewController.swift */,
 				484B04B31FA25BBE005C415D /* GlobalImpactViewController.swift */,
 				48ACC92E1FCF39C9005FD6A2 /* InternetDetailViewController.swift */,
 				4862F2E61FD9D42400237025 /* ArtCell.swift */,
+				487CE1A4200543310088F1CF /* DataView */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,8 +214,18 @@
 				48C38DAD1FE1AF060009A1B2 /* Player.swift */,
 				48C38DAF1FE1AF060009A1B2 /* PlayerLaser.swift */,
 				48C38DAC1FE1AF060009A1B2 /* Projectile.swift */,
+				487CE1A5200543840088F1CF /* BucketItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		487CE1A4200543310088F1CF /* DataView */ = {
+			isa = PBXGroup;
+			children = (
+				484B04AB1FA25B5B005C415D /* DataViewController.swift */,
+				487CE1A22005431C0088F1CF /* BucketItemCell.swift */,
+			);
+			path = DataView;
 			sourceTree = "<group>";
 		};
 		48ACC9301FCF3B9A005FD6A2 /* Frameworks */ = {
@@ -237,6 +252,7 @@
 			children = (
 				48C38DAB1FE1AEBE0009A1B2 /* sounds */,
 				48C38DA91FE1AE940009A1B2 /* Utilities.swift */,
+				487CE1A7200543E80088F1CF /* bucket.csv */,
 				484B047B1FA256DB005C415D /* Assets.xcassets */,
 				484B04801FA256DB005C415D /* Info.plist */,
 			);
@@ -395,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487CE1A6200543840088F1CF /* BucketItem.swift in Sources */,
 				484B04B41FA25BBF005C415D /* GlobalImpactViewController.swift in Sources */,
 				48C38D9B1FE1AB2B0009A1B2 /* StartScene.swift in Sources */,
 				48C38D981FE1AB240009A1B2 /* LevelCompleteScene.swift in Sources */,
@@ -409,6 +426,7 @@
 				48C38DB11FE1AF060009A1B2 /* Projectile.swift in Sources */,
 				48ACC92F1FCF39C9005FD6A2 /* InternetDetailViewController.swift in Sources */,
 				48020CD71FD72B4B001FDD21 /* DrawingView.swift in Sources */,
+				487CE1A32005431C0088F1CF /* BucketItemCell.swift in Sources */,
 				484B04AE1FA25B7C005C415D /* AlgorithmsViewController.swift in Sources */,
 				484B04AA1FA25B3D005C415D /* AbstractionViewController.swift in Sources */,
 				48C38DB51FE1AF060009A1B2 /* InvaderLaser.swift in Sources */,
