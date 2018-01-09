@@ -325,7 +325,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">This App is going to start with a main screen that asks what are your thoughts on Nuclear Energy. It then has a text box for response and a submit button to help collect the user's response and send them to a list of buttons, each of which have a topic. When a specified button is click it displays an image and info on that category of Nuclear Energy. When they understand more the last button is  questions buton whcih brings them to a question screen. On this screen they can ask questions they ave on Nuclear Energy. </mutableString>
+                                        <string key="content">This App is going to start with a main screen that asks what are your thoughts on Nuclear Energy. It then has a text box for response and a submit button to help collect the user's response and send them to a list of buttons, each of which have a topic. When a specified button is click it displays an image and info on that category of Nuclear Energy. When they understand more the last button is  questions buton whcih brings them to a question screen. On this screen they can ask questions they ave on Nuclear Energy. </string>
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="17"/>
                                         </attributes>
@@ -562,6 +562,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5f-xg-JxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1271.2" y="829.83508245877067"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="pF3-PO-xdp">
+            <objects>
+                <tableViewController id="39t-OA-FJc" customClass="DataViewController" customModule="ZachStout_CSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AAF-yL-Gfo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataIdentifier" rowHeight="74" id="Bmn-XF-iN8" customClass="BucketItemCell" customModule="ZachStout_CSP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="74"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bmn-XF-iN8" id="tj3-ir-Wyl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="30" translatesAutoresizingMaskIntoConstraints="NO" id="8WN-oQ-4nA" userLabel="Bucket Item Symbol">
+                                            <rect key="frame" x="0.0" y="2" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Symbol">
+                                                    <attributes>
+                                                        <font key="NSFont" size="30" name=".AppleSystemUIFont"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="text" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pl6-ho-ctD" userLabel="Bucket Item Text">
+                                            <rect key="frame" x="20" y="2" width="355" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="bucket item here">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="17"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="author" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGZ-Fa-7kY" userLabel="Bucket Item Signature">
+                                            <rect key="frame" x="333" y="22" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Author">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="TimesNewRomanPS-ItalicMT"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bucketItemSignature" destination="aGZ-Fa-7kY" id="UO4-4F-RYK"/>
+                                    <outlet property="bucketItemSymbol" destination="8WN-oQ-4nA" id="NVT-vz-taw"/>
+                                    <outlet property="bucketItemText" destination="Pl6-ho-ctD" id="Uey-Tq-QdI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="39t-OA-FJc" id="Dnq-iE-HUw"/>
+                            <outlet property="delegate" destination="39t-OA-FJc" id="rin-MA-e0I"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5U2-jW-FHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3306.4000000000001" y="-1612.4437781109445"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K3s-rl-eSA">
