@@ -25,6 +25,7 @@
 		486801AE1FFD6EFB00C14200 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486801AD1FFD6EFB00C14200 /* DeathScene.swift */; };
 		487CE1A32005431C0088F1CF /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CE1A22005431C0088F1CF /* BucketItemCell.swift */; };
 		487CE1A6200543840088F1CF /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CE1A5200543840088F1CF /* BucketItem.swift */; };
+		487CE1A820055F630088F1CF /* bucket.csv in Resources */ = {isa = PBXBuildFile; fileRef = 487CE1A7200543E80088F1CF /* bucket.csv */; };
 		48ACC92F1FCF39C9005FD6A2 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ACC92E1FCF39C9005FD6A2 /* InternetDetailViewController.swift */; };
 		48ACC9321FCF3B9A005FD6A2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ACC9311FCF3B9A005FD6A2 /* WebKit.framework */; };
 		48B12CE61FCCA608002B159A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B12CE51FCCA607002B159A /* Default-568h@2x.png */; };
@@ -250,9 +251,9 @@
 		48C38D9E1FE1AE1B0009A1B2 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				487CE1A7200543E80088F1CF /* bucket.csv */,
 				48C38DAB1FE1AEBE0009A1B2 /* sounds */,
 				48C38DA91FE1AE940009A1B2 /* Utilities.swift */,
-				487CE1A7200543E80088F1CF /* bucket.csv */,
 				484B047B1FA256DB005C415D /* Assets.xcassets */,
 				484B04801FA256DB005C415D /* Info.plist */,
 			);
@@ -380,6 +381,7 @@
 			files = (
 				48B12CE61FCCA608002B159A /* Default-568h@2x.png in Resources */,
 				484B047C1FA256DB005C415D /* Assets.xcassets in Resources */,
+				487CE1A820055F630088F1CF /* bucket.csv in Resources */,
 				48C38DA81FE1AE550009A1B2 /* powerup sound.mp3 in Resources */,
 				48C38DA41FE1AE550009A1B2 /* extra sound.mp3 in Resources */,
 				484B047A1FA256DB005C415D /* Main.storyboard in Resources */,
