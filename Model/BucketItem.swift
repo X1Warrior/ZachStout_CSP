@@ -6,19 +6,16 @@
 //  Copyright © 2018 Stout, Zachary. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class BucketItem: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+public class BucketItem
+{
+    let itemContents : String
+    let itemAuthor : String
+    
+    init(contents : String, author : String)
+    {
+        itemContents = contents
+        itemAuthor = author
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

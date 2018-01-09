@@ -32,6 +32,9 @@ class BucketItemCell: UITableViewCell
         let symbolStart = 0x1F680
         let symbolEnd = 0x1F6C5
         
+        let emojiRange = 79
+        let symbolRange = 70
+        
         let ascii = emojiStart + Int(arc4random_uniform(UInt32(emojiRange)))
         let emoji = UnicodeScalar(ascii)?.description
         return emoji!
@@ -39,7 +42,7 @@ class BucketItemCell: UITableViewCell
     
     private func updateCellView()
     {
-        if (buketItem != nil)
+        if (bucketItem != nil)
         {
             bucketItemSignature.text = bucketItem.itemAuthor
             bucketItemText.text = bucketItem.itemContents
@@ -49,7 +52,7 @@ class BucketItemCell: UITableViewCell
             bucketItemSignature.text = "author goes here"
             bucketItemText.text = "text goes here"
         }
-        bucketItemSymbol.text = randomEmojiSymbol()
+        bucketItemSymbol.text = randomEmoji()
     }
     
     

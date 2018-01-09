@@ -20,17 +20,17 @@ class DataViewController: UITableViewController
     private func loadBucketListFromFile() -> [BucketItem]
     {
         
-        var items = [bucketItem]()
+        var items = [BucketItem]()
         if let filePath = Bundle.main.url(forResource: "bucket", withExtension: "csv")
         {
             do
             {
                 let input = try String(contentsOf: filePath)
-                let bucketLines = input.components(seperaedBy: "\n")
+                let bucketLines = input.components(separatedBy: "\n")
                 for line in bucketLines
                 {
-                    let item = line.components(seperatedBy: ",")
-                    items.appent(BucketItem(contents: item[0],author: item[1]))
+                    let item = line.components(separatedBy: ",")
+                    items.append(BucketItem(contents: item[0],author: item[1]))
                 }
             }
             catch
@@ -55,7 +55,7 @@ class DataViewController: UITableViewController
     {
         let currentCell = tableView.dequeueReusableCell(withIdentifier: "dataIdentifier", for: indexPath) as! BucketItemCell
         
-        currentCell.bucketItem = bucketList[IndexPath.row]
+        currentCell.bucketItem = bucketList[indexPath.row]
         // currentCell.bucketItemSignature.text = currentCell.bucketItem.itemAuthor
         
         return currentCell
